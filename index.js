@@ -4,7 +4,7 @@ const mongodb =require("mongodb");
 
 
 const app =express();
-const port =process.env.port || 3000
+const port =process.env.PORT || 3000
 const mongoClient =mongodb.MongoClient
 const objectId = mongodb.ObjectID;
 const dbUrl = process.env.DB_URL ||'mongodb://localhost:27017'
